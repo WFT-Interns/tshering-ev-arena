@@ -1,0 +1,175 @@
+/* video*/
+.video-container{
+    margin: auto;
+    margin-top: 90px;
+
+    width: 97.5%;
+    height: 840px;
+
+    background-image: url(resources/ezgif.com-video-to-gif\ \(5\).gif);
+    background-repeat: no-repeat;
+    background-size: 1855px 1080px;
+
+    color: white;
+}
+
+.video-container-inside{
+    margin: auto;
+
+    width: 100%;
+    height: 840px;
+
+    background-color: rgb(0, 0, 0);
+    opacity: 0.55;
+}
+
+/* slogo Texts */
+.slogo-text{
+    position: relative;
+    top: -540px;
+
+    margin: auto;
+
+    height: 200px;
+    width: 600px;
+    text-align: center;
+    font-family: 'Gotham', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogo-text h1{
+    font-size: 65px;
+}
+
+#and{
+    color: rgba(71, 175, 113);
+    font-size: 45px;
+
+    margin-top: 45px;
+}
+
+#s-text{
+    position: relative;
+    top: -635px;
+
+    margin: auto;
+    font-family: 'Gotham', sans-serif;
+
+    width: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#s-text h4{
+    font-size: 30px;
+}
+
+/* button */
+.button{
+    position: relative;
+    top: -560px;
+
+    margin: auto;
+    height: 80px;
+    width: 500px;
+
+    background: rgba(71, 175, 113, 0.60);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gotham', sans-serif;
+}
+
+.button h1{
+    font-size: 35px;
+    margin-top: 16px;
+}
+
+/* top selling EVs of 2022 */
+.second-heading{
+    margin: auto;
+    height: 100px;
+    width: auto;
+    text-align: center;
+    font-family: 'Gotham', sans-serif;
+}
+
+.second-heading h1{
+    font-size: 65px;
+    margin-left: 45px;
+}
+
+.nav-items-EV{
+    margin: auto;
+    height: 90px;
+    width: 800px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items-EV a{
+    font-family: 'Gotham', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.ev-slider-container{
+    position: relative;
+    margin: auto;
+
+    width: 97.5%;
+    height: 840px;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.43) -2.63%, #000000 114.7%);
+}
+
+.ev-slider-image-container{
+    display: none;
+    height: 800px;
+    width: 1100px;
+
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+

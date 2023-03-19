@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    width: 100%;
+    background-color: white;
+    
+    top: 0;
+    position: fixed;
+
+    z-index: 10;
+    display: flex;
+}
+
+.logo-container{
+    height: 90px;
+    width: 500px;
+    float: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    margin-left: -10px;
+    height: 34px;
+    width: 190px;
+    background-image: url(resources/logo.png);
+    background-repeat: no-repeat;
+    background-image: 100%;
+}
+
+.location{
+    height: 50px;
+    width: 250px;
+    background-image: url(resources/location-01.png);
+    background-repeat: no-repeat;
+    background-image: 100%;
+
+    font-family: 'Gotham', sans-serif;
+}
+
+.location h5{
+    margin-left: 45px;
+    margin-top: 1.5px;
+    font-weight: 450;
+}
+
+.location h4{
+    margin-left: 45px;
+    margin-top: -18px;
+}
+
+.nav-items{
+    margin: auto;
+    height: 90px;
+    width: 800px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.search-container{
+    height: 90px;
+    width: 500px;
+    float: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    height: 40px;
+    width: 40px;
+    margin-left: 400px;
+
+    background-image: url(resources/search-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+}
+
+#active-home{
+    background: rgba(71, 175, 113);
+    color:white;
+}
+
+.nav-items-hover:hover{
+    background: rgba(71, 175, 113, 0.30);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+
