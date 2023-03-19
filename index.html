@@ -2,83 +2,111 @@
 <html lang="en">
 <head>
     <title>EV Arena - Home</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="nav_style.css">
+    <link rel="stylesheet" type="text/css" href="video_style.css">
+    <link rel="stylesheet" type="text/css" href="footer_style.css">
     <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
 </head>
 <body>
 
     <!-- navigation menu -->
     <div class="nav">
-        <div class="logoContainer">
+        <!-- logo & location img container-->
+        <div class="logo-container">
             <div class="logo"></div>
             <div class="location">
                 <h5>Nearest Charging Stations</h5>
                 <h4>Kathmandu</h4>
             </div>
         </div>
-        <div class="navItem">
-            <a>
+        <!-- navigation menu items -->
+        <div class="nav-items">
+            <a class="nav-items-hover" id="active-home">
                 Home
             </a>
-            <a>
+            <a class="nav-items-hover">
                 Ev Finder
             </a>
-            <a>
+            <a class="nav-items-hover">
                 Compare
             </a>
-            <a>
+            <a class="nav-items-hover">
                 Browse
             </a>
         </div>
-        <div class="searchContainer">
+        <!-- search logo container -->
+        <div class="search-container">
             <div class="search"></div>
         </div>
     </div>
     <!-- slogo and video -->
-    <div class="vContainer">
-        <div class="vContainerInside"></div>
-        <div class="slogoText">
+    <div class="video-container">
+        <!-- dark opacity container -->
+        <div class="video-container-inside"></div>
+        <!-- main slogo text-->
+        <div class="slogo-text">
             <h1>Compare</h1>
             <h1 id="and">&</h1>
             <h1>Drive</h1>
         </div>  
-        <div id="sText">
+        <div id="s-text">
             <h4>Away The Best EV For You</h4>
         </div>
+        <!-- button -->
         <div class="button">
             <h1>Why Choose EV?</h1>
         </div>
     </div>
 
-    <div class="secondHeading">
+    <!----------------------------- second page ------------------------------->
+    <div class="second-heading">
         <h1>Top Selling EVs of 2002</h1>
     </div>  
 
-    <div class="navItemEV">
-        <a>
+    <!-- Ev items nav menu -->
+    <div class="nav-items-EV">
+        <a class="nav-items-hover" id="active-home">
             Car
         </a>
-        <a>
+        <a class="nav-items-hover">
             Bike
         </a>
-        <a>
+        <a class="nav-items-hover">
             Scooter
         </a>
     </div>    
 
-    <div class="evContainer"></div>
+    <!-- sliding car images container -->
+    <div class="ev-slider-container">
+        <!-- car images container -->
+        <div class="ev-slider-image-container">
+            <img src="resources/tesla.png" style="width:100%">
+        </div>
+        <div class="ev-slider-image-container">
+            <img src="resources/porsche.png" style="width:100%">
+        </div>
+        <div class="ev-slider-image-container">
+            <img src="resources/audi.png" style="width:100%">
+        </div>
+        <div class="ev-slider-image-container">
+            <img src="resources/bmw.png" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
 
+    <!----------------------------------- footer --------------------------------->
     <div class="footer">
-        <div class="leftCont">
+        <div class="left-container">
             <li>Home</li>
             <li>EV Finder</li>
             <li>Compare</li>
             <li>Browse</li>
             <li>News</li>
         </div>
-        <div class="logoFooter"></div>
-        <div class="rightCont">
-            <div class="socialMediaLogo">
+        <div class="logo-footer"></div>
+        <div class="right-container">
+            <div class="social-media-logo">
                 <div id="s-logo-f" class="s-logo"></div>
                 <div id="s-logo-i" class="s-logo"></div>
                 <div id="s-logo-t" class="s-logo"></div>
@@ -88,6 +116,12 @@
             <p>Kathmandu, Nepal</p>
         </div>
     </div>
+    <div class="copyRight">
+        <div class="copyRight-image"></div>
+        <p>All Rights Reserved </p>
+    </div>
+
+    <script src="slider.js"></script>
 
 </body>
 </html>
