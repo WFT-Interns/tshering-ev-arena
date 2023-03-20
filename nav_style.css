@@ -17,11 +17,12 @@ body{
 .logo-container{
     height: 90px;
     width: 500px;
-    float: right;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* background-color: red; */
 }
 
 .logo{
@@ -35,7 +36,7 @@ body{
 
 .location{
     height: 50px;
-    width: 250px;
+    width: auto;
     background-image: url(resources/location-01.png);
     background-repeat: no-repeat;
     background-image: 100%;
@@ -54,6 +55,63 @@ body{
     margin-top: -18px;
 }
 
+@media screen and (max-width: 810px){
+    .logo-container{
+        margin-left: 18px;
+    }
+
+    .location{
+        width: 250px;
+    }
+}
+
+/*hamburger icon*/
+.hamburger{
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    /* background-color: aqua; */
+}
+
+.hamburger label#bar{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+
+    /* background-color: red; */
+}
+
+.hamburger label#bar span{
+    background-color: black;
+    height: 3px;
+    width: 65%;
+    margin: 4px;
+}
+
+#check{
+    display: none;
+}
+/*end of hamburger*/
+
+@media screen and (max-width: 810px){
+    .hamburger label#bar{
+        opacity: 100;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+}
+
 .nav-items{
     margin: auto;
     height: 90px;
@@ -62,6 +120,13 @@ body{
 
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 810px){
+    .nav-items{
+        display: none;
+        background-color: aqua;
+    }
 }
 
 a{
@@ -75,6 +140,12 @@ a{
     padding-bottom: 0.2em;
 }
 
+.nav-items-hover:hover{
+    background: rgba(71, 175, 113, 0.30);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
 .search-container{
     height: 90px;
     width: 500px;
@@ -83,6 +154,15 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* background-color: blue; */
+}
+
+@media screen and (max-width: 810px){
+    .search-container{
+        margin-left: -150px;
+        width: auto;
+    }
 }
 
 .search{
@@ -100,10 +180,6 @@ a{
     color:white;
 }
 
-.nav-items-hover:hover{
-    background: rgba(71, 175, 113, 0.30);
-    cursor: pointer;
-    transition-duration: 0.3s;
-}
+
 
 

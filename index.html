@@ -38,6 +38,16 @@
         <div class="search-container">
             <div class="search"></div>
         </div>
+        <!-- hamburger icon -->
+        <div class="hamburger">
+        <input type="checkbox" id="check">
+        <label for="check" id="bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        </div>
+    <!-- end of hamburger icon -->
     </div>
     <!-- slogo and video -->
     <div class="video-container">
@@ -91,8 +101,15 @@
         <div class="ev-slider-image-container">
             <img src="resources/bmw.png" style="width:100%">
         </div>
+        <!-- prev and next button -->
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
+        <!-- three dots -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
     </div>
 
     <!----------------------------------- footer --------------------------------->

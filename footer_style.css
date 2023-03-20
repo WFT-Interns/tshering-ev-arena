@@ -39,8 +39,17 @@
 }
 
 .left-container li{
-    margin-left: 75px;
+    margin-left: 100px;
     padding-top: 8px;
+}
+
+@media screen and (max-width: 810px){
+    .left-container li{
+        margin-left: 60px;
+    }
+    .left-container{
+        width: 220px;
+    }
 }
 
 .right-container{
@@ -59,6 +68,12 @@
     color: white;
 }
 
+@media screen and (max-width: 810px){
+    .right-container{
+        width: 220px;
+    }
+}
+
 .social-media-logo{
     height: 35px;
     width: 240px;
@@ -72,6 +87,17 @@
     width: 350px;
 
     background-size: 35px 35px;
+}
+
+@media screen and (max-width: 810px){
+    .social-media-logo{
+        width: 150px;
+        height: 20px;
+    }
+    .s-logo{
+        height: 25px;
+        background-size: 27px 25px;
+    } 
 }
 
 #s-logo-f{
