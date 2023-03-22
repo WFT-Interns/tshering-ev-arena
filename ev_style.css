@@ -68,7 +68,107 @@
     justify-content: center;
 
     height: 100px;
-    background-color: red;
+}
+
+.filter-menu{ 
+    position: relative;
+    top: 40px;
+    height: 50px;
+    width: 250px;
+
+    /* background-color: green; */
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.filter-menu-range{ 
+    position: relative;
+    height: 50px;
+    width: 250px;
+
+    /* background-color: green; */
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.filter-menu select{
+    display: none;
+}
+
+.select-selected {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 5px;
+
+    height: 32px;
+    width: 215px;
+
+    display: flex;
+    align-items: center;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 22px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent rgb(0, 0, 0) transparent;
+    top: 16px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    /* user-select: none; */
+
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    /* top: 100%; */
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#range {
+    margin-left: 3px;
+    margin-right: 70px;
+}
+
+#date {
+    margin-left: 3px;
+    margin-right: 125px;
 }
 
 .filter-menu-container-bottom{  
@@ -79,6 +179,42 @@
     margin-top: 10px;
     height: 100px;
     /* background-color: red; */
+}
+
+#filter-menu-price,
+#filter-menu-search{
+    margin-top: -20px;
+}
+
+#filter-menu-price p{   
+    font-weight: 500px;
+    margin-right: 25px;
+}
+
+#filter-menu-search{
+    height: 50px;
+    width: 210px;
+
+    background: #000000;
+    border: 1px solid #000000;
+
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filter-menu-search p{
+    margin-right: 65px;
+    margin-left: 10px;
+}
+
+.dropdown-icon{
+    margin-top: 5px;
+
+    height: 20px;
+    width: 20px;
 }
 
 .cars-container{
