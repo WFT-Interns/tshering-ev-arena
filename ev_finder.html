@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EV Arena - EV Finder</title>
+    <link rel="stylesheet" type="text/css" href="nav_style.css">
+    <link rel="stylesheet" type="text/css" href="video_style.css">
+    <link rel="stylesheet" type="text/css" href="ev_style.css">
+    <link rel="stylesheet" type="text/css" href="footer_style.css">
+    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+</head>
+<body>
+    <!-- navigation menu -->
+    <div class="nav">
+        <!-- logo & location img container-->
+        <div class="logo-container">
+            <div class="logo"></div>
+            <div class="location">
+                <h5>Nearest Charging Stations</h5>
+                <h4>Kathmandu</h4>
+            </div>
+        </div>
+        <!-- navigation menu items -->
+        <div class="nav-items">
+            <a href="index.html" class="nav-items-hover">
+                Home
+            </a>
+            <a class="nav-items-hover" id="active-ev">
+                Ev Finder
+            </a>
+            <a class="nav-items-hover">
+                Compare
+            </a>
+            <a class="nav-items-hover">
+                Browse
+            </a>
+        </div>
+        <!-- search logo container -->
+        <div class="search-container">
+            <div class="search"></div>
+        </div>
+        <!-- hamburger icon -->
+        <div class="hamburger">
+        <input type="checkbox" id="check">
+        <label for="check" id="bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        </div>
+    <!-- end of hamburger icon -->
+    </div>
+
+    <!-- Ev items nav menu -->
+    <div class="nav-items-EV-Finder">
+        <a class="nav-items-hover" id="active-home">
+            Car
+        </a>
+        <a class="nav-items-hover">
+            Bike
+        </a>
+        <a class="nav-items-hover">
+            Scooter
+        </a>
+    </div> 
+
+    <div class="finder-container">
+        <div class="filter-container">
+            <div class="filter-menu-container-top" >
+            </div>
+
+            <div class="filter-menu-container-bottom">
+                <div id="filter-menu-price">
+                    <p>Price Range</p>
+                </div>
+                <div id="filter-menu-search">
+                    <p>SERCH EV</p>
+                    <div class="dropdown-icon">
+                        <img src="resources/dp-Vector.png" style="width: 50%">
+                    </div>
+                </div>
+            </div>
+
+        </div>  
+        <div class="cars-container"></div>
+    </div>
+
+    <!----------------------------------- footer --------------------------------->
+    <div class="footer">
+        <div class="left-container">
+            <li>Home</li>
+            <li>EV Finder</li>
+            <li>Compare</li>
+            <li>Browse</li>
+            <li>News</li>
+        </div>
+        <div class="logo-footer"></div>
+        <div class="right-container">
+            <div class="social-media-logo">
+                <div id="s-logo-f" class="s-logo"></div>
+                <div id="s-logo-i" class="s-logo"></div>
+                <div id="s-logo-t" class="s-logo"></div>
+                <div id="s-logo-y" class="s-logo"></div>
+            </div>
+            <h4>WaterFlow Technology</h4>
+            <p>Kathmandu, Nepal</p>
+        </div>
+    </div>
+    <div class="copyRight">
+        <div class="copyRight-image"></div>
+        <p>All Rights Reserved </p>
+    </div>
+
+    <script src="dropdown.js"></script>
+    
+</body>
+</html>

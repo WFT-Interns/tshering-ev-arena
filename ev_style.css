@@ -1,0 +1,97 @@
+.nav-items-EV-Finder{
+    margin: auto;
+    position: relative;
+    top: 150px;
+
+    height: 30px;
+    width: 800px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-items-EV-Finder a{
+    font-family: 'Gotham', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+    width: 180px;
+
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.finder-container{
+    margin: auto;
+    margin-top: 150px;
+
+    width: 97.5%;
+    height: 840px;
+}
+
+@media screen and (max-width: 810px){
+    .video-container,
+    .video-container-inside{
+        height: 820px;
+        background-size: 1500px 100%;
+        background-position: -30em;
+    }
+}
+
+.filter-container{
+    position: relative;
+    margin: auto;
+
+    height: 210px;
+    width: 1000px;
+    font-family: 'Gotham', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    z-index: 3;
+
+    font-weight: 450;
+    font-size: 17px;
+}
+
+.filter-menu-container-top{  
+    display: flex;
+    justify-content: center;
+
+    height: 100px;
+    background-color: red;
+}
+
+.filter-menu-container-bottom{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    height: 100px;
+    /* background-color: red; */
+}
+
+.cars-container{
+    position: relative;
+    top: -150px;
+
+    margin: auto;
+    height: 650px;
+    width: 1800px;
+
+    background: #FCFCFC;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #626262;
+    border-radius: 15px 15px 0px 0px;
+}
