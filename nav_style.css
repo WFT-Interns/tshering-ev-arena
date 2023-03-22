@@ -138,6 +138,9 @@ a{
     padding-right: 1em;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
+
+    text-decoration: none;
+    color: black;
 }
 
 .nav-items-hover:hover{
@@ -175,7 +178,8 @@ a{
     background-size: 30px 30px;
 }
 
-#active-home{
+#active-home,
+#active-ev{
     background: rgba(71, 175, 113);
     color:white;
 }
