@@ -64,31 +64,15 @@
     </div> 
 
     <div class="finder-container">
+        <!-- filter menu container -->
         <div class="filter-container">
-            <div class="filter-menu-container-top">
-                <!-- filter menu -->
-                <div class="filter-menu">
-                    <select onclick="firstToggle()">
-                        <option value="0">
-                            <p>EV - Brand Name</p>
-                        </option>
-                        <option value="1">
-                            <p>Tesla</p>
-                        </option>
-                        <option value="2">
-                            <p>Porsche</p>
-                        </option>
-                        <option value="3">
-                            <p>Audi</p>
-                        </option>
-                        <option value="4">
-                            <p>BMW</p>
-                        </option>
-                    </select>
-                </div>
-                <!-- filter menu -->
+            <!-- dropdown menu filter -->
+            <div id="filter-menu-container-top">
+                <div id="filter-menu-container"></div> 
+                <div id="filter-menu-container1"></div>
+                <div id="filter-menu-container2"></div>
             </div> 
-            
+            <!-- price range and search button -->
             <div class="filter-menu-container-bottom">
                 <div id="filter-menu-price">
                     <p>Price Range</p>
@@ -101,6 +85,7 @@
                 </div>
             </div>
         </div>  
+        <!-- display cars in cards -->
         <div class="cars-container"></div>
     </div>  
 

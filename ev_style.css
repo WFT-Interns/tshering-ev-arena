@@ -33,15 +33,6 @@
     height: 840px;
 }
 
-@media screen and (max-width: 810px){
-    .video-container,
-    .video-container-inside{
-        height: 820px;
-        background-size: 1500px 100%;
-        background-position: -30em;
-    }
-}
-
 .filter-container{
     position: relative;
     margin: auto;
@@ -63,13 +54,16 @@
     font-size: 17px;
 }
 
-.filter-menu-container-top{  
+#filter-menu-container-top{  
     display: flex;
     justify-content: center;
+    flex-direction: row;
 
     height: 100px;
+    width: 100%;
 }
 
+/* ev brand name menu */
 .filter-menu{ 
     position: relative;
     top: 40px;
@@ -84,6 +78,7 @@
 
 .filter-menu-range{ 
     position: relative;
+    top: 40px; 
     height: 50px;
     width: 250px;
 
@@ -93,10 +88,31 @@
     border-radius: 5px;
 }
 
-.filter-menu select{
+.filter-menu-year{ 
+    position: relative;
+    top: 40px; 
+    height: 50px;
+    width: 250px;
+
+    /* background-color: green; */
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.filter-menu select,
+.filter-menu-range select,
+.filter-menu-year select{
     display: none;
 }
 
+.filter-menu,
+.filter-menu-range,
+.filter-menu-year{
+    margin-left: 20px;
+}
+
+/* style the div that holds selected item */
 .select-selected {
     background: #FFFFFF;
     border: 2px solid #000000;
@@ -161,16 +177,6 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-#range {
-    margin-left: 3px;
-    margin-right: 70px;
-}
-
-#date {
-    margin-left: 3px;
-    margin-right: 125px;
-}
-
 .filter-menu-container-bottom{  
     display: flex;
     justify-content: center;
@@ -178,12 +184,6 @@
 
     margin-top: 10px;
     height: 100px;
-    /* background-color: red; */
-}
-
-#filter-menu-price,
-#filter-menu-search{
-    margin-top: -20px;
 }
 
 #filter-menu-price p{   
